@@ -1,0 +1,4 @@
+Rule,Accuracy,FPR,FNR
+Rule A: raw URL is plain https://www. homepage,0.9967896855704134,0.0,0.0076743754254946055
+Rule B: URLSimilarityIndex = 100,0.9968069453254111,0.0,0.0076331153425618385
+Rule C: canonical URL has no path/query,0.6998744352823911,0.0,0.7174612670971469

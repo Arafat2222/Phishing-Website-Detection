@@ -1,0 +1,56 @@
+\begin{tabular}{@{}llrrrrc@{}}
+\toprule
+\textbf{Feature} & \textbf{Group} & \textbf{AUC (label)} & \textbf{AUC (shape$|$phish.)} & \textbf{Legit.\ at mode (\%)} & \textbf{Phish.\ at that value (\%)} & \textbf{Class-constant}\\
+\midrule
+\texttt{URLSimilarityIndex} & URL string & 0.996 & 0.588 & 100.00 & 0.76 & yes\\
+\texttt{LineOfCode} & page content & 0.990 & 0.627 & 0.08 & 0.05 & \\
+\texttt{NoOfExternalRef} & page content & 0.988 & 0.617 & 1.79 & 0.14 & \\
+\texttt{NoOfImage} & page content & 0.979 & 0.549 & 2.23 & 0.06 & \\
+\texttt{NoOfSelfRef} & page content & 0.972 & 0.537 & 3.76 & 78.76 & \\
+\texttt{NoOfJS} & page content & 0.971 & 0.519 & 4.44 & 0.47 & \\
+\texttt{NoOfCSS} & page content & 0.957 & 0.508 & 10.74 & 5.93 & \\
+\texttt{HasSocialNet} & page content & 0.895 & 0.501 & 79.46 & 0.51 & \\
+\texttt{HasCopyrightInfo} & page content & 0.875 & 0.513 & 80.82 & 5.73 & \\
+\texttt{HasDescription} & page content & 0.846 & 0.514 & 73.66 & 4.46 & \\
+\texttt{NoOfOtherSpecialCharsInURL} & URL string & 0.821 & 0.583 & 78.61 & 25.17 & \\
+\texttt{LargestLineLength} & page content & 0.815 & 0.620 & 8.24 & 0.03 & \\
+\texttt{SpacialCharRatioInURL} & URL string & 0.806 & 0.555 & 6.52 & 1.80 & \\
+\texttt{DomainTitleMatchScore} & page content & 0.791 & 0.543 & 73.00 & 16.17 & \\
+\texttt{HasSubmitButton} & page content & 0.789 & 0.520 & 66.09 & 8.39 & \\
+\texttt{URLTitleMatchScore} & page content & 0.771 & 0.515 & 73.00 & 19.42 & \\
+\texttt{IsResponsive} & page content & 0.767 & 0.537 & 85.44 & 32.01 & \\
+\texttt{URLCharProb} & URL string & 0.767 & 0.617 & 0.00 & 0.00 & \\
+\texttt{IsHTTPS} & URL string & 0.755 & 0.757 & 100.00 & 49.00 & yes\\
+\texttt{NoOfiFrame} & page content & 0.754 & 0.513 & 45.35 & 95.10 & \\
+\texttt{HasHiddenFields} & page content & 0.748 & 0.532 & 59.08 & 9.39 & \\
+\texttt{NoOfEmptyRef} & page content & 0.746 & 0.507 & 48.33 & 97.34 & \\
+\texttt{CharContinuationRate} & URL string & 0.743 & 0.503 & 77.98 & 34.66 & \\
+\texttt{HasFavicon} & page content & 0.739 & 0.511 & 56.70 & 8.80 & \\
+\texttt{NoOfLettersInURL} & URL string & 0.739 & 0.595 & 8.18 & 4.13 & \\
+\texttt{URLLength} & URL string & 0.730 & 0.561 & 8.28 & 3.54 & \\
+\texttt{NoOfDegitsInURL} & URL string & 0.727 & 0.651 & 97.36 & 52.80 & \\
+\texttt{DegitRatioInURL} & URL string & 0.725 & 0.642 & 97.36 & 52.80 & \\
+\texttt{LetterRatioInURL} & URL string & 0.713 & 0.629 & 7.88 & 4.42 & \\
+\texttt{Robots} & page content & 0.675 & 0.502 & 58.32 & 93.40 & \\
+\texttt{HasTitle} & page content & 0.661 & 0.555 & 99.88 & 67.75 & \\
+\texttt{Pay} & page content & 0.655 & 0.522 & 63.06 & 93.97 & \\
+\texttt{DomainLength} & URL string & 0.623 & 0.554 & 8.28 & 5.47 & \\
+\texttt{TLDLegitimateProb} & URL string & 0.608 & 0.533 & 51.00 & 43.44 & \\
+\texttt{Bank} & page content & 0.564 & 0.501 & 81.85 & 94.58 & \\
+\texttt{NoOfPopup} & page content & 0.545 & 0.503 & 90.45 & 99.48 & \\
+\texttt{HasPasswordField} & page content & 0.543 & 0.517 & 86.15 & 94.72 & \\
+\texttt{HasExternalFormSubmit} & page content & 0.535 & 0.502 & 92.63 & 99.58 & \\
+\texttt{NoOfQMarkInURL} & URL string & 0.531 & 0.532 & 100.00 & 93.75 & \\
+\texttt{NoOfEqualsInURL} & URL string & 0.528 & 0.528 & 100.00 & 94.49 & \\
+\texttt{TLDLength} & URL string & 0.525 & 0.550 & 69.20 & 63.23 & \\
+\texttt{NoOfURLRedirect} & page content & 0.516 & 0.501 & 88.02 & 84.87 & \\
+\texttt{Crypto} & page content & 0.515 & 0.504 & 96.35 & 99.42 & \\
+\texttt{NoOfSelfRedirect} & page content & 0.515 & 0.509 & 97.29 & 94.27 & \\
+\texttt{NoOfSubDomain} & URL string & 0.513 & 0.661 & 85.17 & 63.31 & \\
+\texttt{NoOfAmpersandInURL} & URL string & 0.504 & 0.504 & 100.00 & 99.11 & \\
+\texttt{IsDomainIP} & URL string & 0.503 & 0.503 & 100.00 & 99.35 & \\
+\texttt{ObfuscationRatio} & URL string & 0.502 & 0.502 & 100.00 & 99.53 & \\
+\texttt{HasObfuscation} & URL string & 0.502 & 0.502 & 100.00 & 99.53 & \\
+\texttt{NoOfObfuscatedChar} & URL string & 0.502 & 0.502 & 100.00 & 99.53 & \\
+\bottomrule
+\end{tabular}

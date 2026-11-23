@@ -1,4 +1,3 @@
-[README .md](https://github.com/user-attachments/files/35284162/README.1.md)
 # Beyond a Single Benchmark: Phishing Website Detection Across Datasets
 
 Code for the manuscript *"Beyond a Single Benchmark …"* (under double-blind review).
@@ -15,11 +14,18 @@ The study tests whether phishing detectors trained on one public dataset still w
 ├── notebooks/
 │   ├── Revision_Experiments.ipynb   # E1–E5: all main paper and supplement tables/figures
 │   └── URL_Guard.ipynb              # E6: Web Page only vs Web Page + PhiUSIIL, and the saved model
+├── results/
+│   ├── revision_results/            # outputs of Revision_Experiments.ipynb used in the paper
+│   │   ├── repro/                   # config, versions, dataset hashes, retained rows, fold files
+│   │   ├── tables/                  # fold-level CSVs, paired tests, LaTeX tables
+│   │   ├── figures/                 # paper and supplement figures (PDF)
+│   │   └── cleaned_data/            # cleaned PhiUSIIL and Web Page records with canonical URL and features
+│   └── url_guard_results/           # outputs of URL_Guard.ipynb (tables, figures, repro, saved model)
 ├── LICENSE
 └── README.md
 ```
 
-Both notebooks run unchanged on **Kaggle**, **Google Colab** or a local PC; the platform is detected automatically.
+`results/` holds the exact outputs used in the paper, so every number can be checked without running the code. Both notebooks run unchanged on **Kaggle**, **Google Colab** or a local PC; the platform is detected automatically.
 
 ## Experiments
 
@@ -42,7 +48,7 @@ Main findings:
 
 ## Datasets
 
-The data are **not** included. Download them from the sources below. The notebooks search all sub-folders and accept the file names listed, so files do not need to be renamed.
+The raw data are **not** included (only the cleaned PhiUSIIL and Web Page records in `results/revision_results/cleaned_data/`). Download them from the sources below. The notebooks search all sub-folders and accept the file names listed, so files do not need to be renamed.
 
 | Key | Dataset | Source | Accepted file names | Records (raw → used) |
 |-----|---------|--------|---------------------|----------------------|
@@ -134,7 +140,7 @@ To score a URL, first run cell 3 of the notebook (`canonicalize`, `url_features`
 ```python
 import joblib, pandas as pd
 
-b = joblib.load("url_guard_model.joblib")
+b = joblib.load("results/url_guard_results/model/url_guard_model.joblib")
 
 def score(url):
     c = canonicalize(url)

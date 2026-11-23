@@ -1,0 +1,31 @@
+{
+  "setup": "Combined",
+  "view": "CanonURL",
+  "model_name": "LightGBM",
+  "threshold": 0.5,
+  "bands": {
+    "low": 0.3,
+    "high": 0.7
+  },
+  "trained_on": {
+    "n": 242616,
+    "WebPage": 11081,
+    "PhiUSIIL": 231535
+  },
+  "cv": {
+    "D4V": 0.888719464144996,
+    "PhiUSIIL held-out": 0.883108635335557,
+    "Web Page held-out": 0.930357121573202,
+    "mean_AUC": 0.9007284070179183,
+    "deep_link_FPR": 0.23547860471908363
+  },
+  "versions": {
+    "python": "3.13.16",
+    "sklearn": "1.6.1",
+    "numpy": "2.1.3",
+    "pandas": "2.3.3",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.6.0",
+    "tldextract": "5.4.0"
+  }
+}

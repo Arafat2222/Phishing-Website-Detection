@@ -1,0 +1,28 @@
+{
+  "SEEDS": [
+    42,
+    44
+  ],
+  "N_FOLDS": 5,
+  "SVM_MAX_TRAIN": 20000,
+  "NGRAM": "char 3-5 TF-IDF, min_df 3, 100k; chi2 top-2000 for non-LR models; RF/DT <= 60k rows",
+  "N_BOOT": 1000,
+  "N_DEEPLINK": 3000,
+  "MODELS": [
+    "RF",
+    "SVM",
+    "DT",
+    "XGBoost",
+    "LightGBM"
+  ],
+  "QUICK": false,
+  "platform": "Kaggle",
+  "model_settings": {
+    "RF": "n_estimators=200, Gini, max_features=sqrt, no depth limit",
+    "SVM": "StandardScaler + RBF, C=1, gamma=scale, decision_function scores, <= SVM_MAX_TRAIN rows",
+    "DT": "Gini, no depth limit",
+    "XGBoost": "n_estimators=300, library defaults, eval_metric=logloss",
+    "LightGBM": "n_estimators=300, library defaults"
+  },
+  "note": "All settings fixed before any experiment; no setting was chosen on test folds."
+}

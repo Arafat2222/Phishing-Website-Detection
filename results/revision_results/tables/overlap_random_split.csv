@@ -1,0 +1,4 @@
+Dataset,Group key,Groups,Shared groups,Test rows sharing a group (%),  phishing (%),  legitimate (%)
+PhiUSIIL,registrable domain (eTLD+1),175467,2361,25.869433897134968,58.51985559566787,2.3885468437059565
+Web Page Phishing,registrable domain (eTLD+1),6630,491,49.42273534635879,60.685302073940484,38.495188101487315
+Phishing Websites,domain-signature proxy (no raw URLs),62126,3787,36.19216877830648,61.26229508196721,22.71004143524641

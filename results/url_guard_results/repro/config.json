@@ -1,0 +1,32 @@
+{
+  "SEEDS": [
+    42,
+    44
+  ],
+  "N_FOLDS": 5,
+  "SVM_MAX_TRAIN": 20000,
+  "NGRAM_K": 2000,
+  "NGRAM_TREE_MAX_TRAIN": 60000,
+  "MODELS": [
+    "LR",
+    "RF",
+    "SVM",
+    "DT",
+    "XGBoost",
+    "LightGBM"
+  ],
+  "VIEWS": [
+    "CanonURL",
+    "CharNgram"
+  ],
+  "SETUPS": [
+    "WebPage",
+    "Combined"
+  ],
+  "PATHS": {
+    "PhiUSIIL": "PhiUSIIL_Phishing_URL_Dataset.csv",
+    "WebPage": "Web_Page_Phishing_Detection.csv",
+    "Ext1000": "Phishing_Detection_External_Evaluation_Dataset_1000_URLs.csv"
+  },
+  "PLATFORM": "Kaggle"
+}

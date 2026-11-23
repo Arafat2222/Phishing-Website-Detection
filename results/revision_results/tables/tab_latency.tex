@@ -1,0 +1,11 @@
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+\textbf{Model} & \textbf{Batch inference} & \textbf{Single-URL inference} & \textbf{Feature extraction} & \textbf{End-to-end (median)} & \textbf{End-to-end (p95)}\\
+\midrule
+RF & 0.0626 & 11.267 & 0.071 & 11.404 & 12.624\\
+SVM & 0.3596 & 0.999 & 0.071 & 1.133 & 1.268\\
+DT & 0.0004 & 0.153 & 0.071 & 0.263 & 0.321\\
+XGBoost & 0.0059 & 0.429 & 0.071 & 0.557 & 0.649\\
+LightGBM & 0.0117 & 0.804 & 0.071 & 0.944 & 1.089\\
+\bottomrule
+\end{tabular}

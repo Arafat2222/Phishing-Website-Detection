@@ -1,0 +1,39 @@
+{
+  "PhiUSIIL": {
+    "file": "PhiUSIIL_Phishing_URL_Dataset.csv",
+    "sha256": "a236549cd369cd80bd478ff8e1779cbf44c58d5c3f79f7a51a1adbed7d06d1c6",
+    "raw": 235795,
+    "label_conflicts_removed": 86,
+    "canonical_duplicates_removed": 3956,
+    "final": 231753,
+    "phishing_ratio": 0.4183160520036418,
+    "n_groups": 175467
+  },
+  "WebPage": {
+    "file": "Web_Page_Phishing_Detection.csv",
+    "sha256": "21093e2902e5441c86a6daf95e86e7c332046e477fdf109a579d7bd81e586d6c",
+    "raw": 11430,
+    "duplicates_removed": 174,
+    "final": 11256,
+    "phishing_ratio": 0.49227078891257997,
+    "n_groups": 6630
+  },
+  "PhishWeb": {
+    "file": "Phishing_Websites_Dataset_.csv",
+    "sha256": "87da36a20c8c1a9d13db5899514071907179c0fe790dc2ea4f0811957d68745d",
+    "raw": 88647,
+    "duplicates_removed": 1438,
+    "final": 87209,
+    "phishing_ratio": 0.3497001456271715,
+    "n_groups": 62126
+  },
+  "Tan": {
+    "file": "Phishing_Legitimate_full.csv",
+    "sha256": "204c226d6b6126a40423084ce9d1391a162d0545f451b858464c1b9b742a8900",
+    "raw": 10000,
+    "duplicates_removed": 419,
+    "final": 9581,
+    "phishing_ratio": 0.47855129944682184,
+    "n_groups": null
+  }
+}

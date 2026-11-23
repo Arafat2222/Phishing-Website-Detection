@@ -1,0 +1,12 @@
+\begin{tabular}{@{}lrrrrrrr@{}}
+\toprule
+\textbf{Class} & \textbf{URLs} & \textbf{https} & \textbf{http} & \textbf{host www.} & \textbf{path/query} & \textbf{SimIndex=100} & \textbf{median / max length}\\
+\midrule
+Legitimate & 134,807 & 100.00 & 0.00 & 100.00 & 0.00 & 100.00 & 27 / 58\\
+Phishing & 96,946 & 48.49 & 51.51 & 41.97 & 28.25 & 0.76 & 34 / 6,097\\
+\midrule
+\multicolumn{8}{@{}l}{Rule A: raw URL is plain \texttt{https://www.} homepage: accuracy 99.68\%, FPR 0.00\%, FNR 0.77\%}\\
+\multicolumn{8}{@{}l}{Rule B: URLSimilarityIndex = 100: accuracy 99.68\%, FPR 0.00\%, FNR 0.76\%}\\
+\multicolumn{8}{@{}l}{Rule C: canonical URL has no path/query: accuracy 69.99\%, FPR 0.00\%, FNR 71.75\%}\\
+\bottomrule
+\end{tabular}

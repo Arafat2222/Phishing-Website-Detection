@@ -1,0 +1,19 @@
+\begin{tabular}{@{}llccc@{}}
+\toprule
+\textbf{Input} & \textbf{Model} & \textbf{Login path} & \textbf{Generic path} & \textbf{Login subdomain}\\
+\midrule
+lexical (34) & LR & 100.00{\tiny$\pm$0.00} & 100.00{\tiny$\pm$0.00} & 90.06{\tiny$\pm$3.32}\\
+ & LightGBM & 100.00{\tiny$\pm$0.00} & 100.00{\tiny$\pm$0.00} & 88.21{\tiny$\pm$1.20}\\
+ & XGBoost & 100.00{\tiny$\pm$0.00} & 100.00{\tiny$\pm$0.00} & 87.79{\tiny$\pm$1.10}\\
+ & RF & 100.00{\tiny$\pm$0.00} & 100.00{\tiny$\pm$0.00} & 85.78{\tiny$\pm$1.02}\\
+ & SVM & 99.99{\tiny$\pm$0.03} & 99.77{\tiny$\pm$0.10} & 91.53{\tiny$\pm$2.86}\\
+ & DT & 99.82{\tiny$\pm$0.12} & 99.79{\tiny$\pm$0.14} & 76.84{\tiny$\pm$1.48}\\
+\midrule
+char 3--5-gram TF-IDF & LR & 94.50{\tiny$\pm$0.72} & 79.72{\tiny$\pm$1.03} & 29.79{\tiny$\pm$0.97}\\
+ & LightGBM & 96.29{\tiny$\pm$0.58} & 87.93{\tiny$\pm$1.31} & 41.54{\tiny$\pm$2.04}\\
+ & XGBoost & 95.37{\tiny$\pm$0.66} & 87.53{\tiny$\pm$1.19} & 39.07{\tiny$\pm$1.30}\\
+ & RF & 94.81{\tiny$\pm$0.76} & 85.71{\tiny$\pm$0.75} & 40.13{\tiny$\pm$1.47}\\
+ & SVM & 97.57{\tiny$\pm$1.44} & 82.01{\tiny$\pm$1.01} & 45.63{\tiny$\pm$4.99}\\
+ & DT & 91.55{\tiny$\pm$1.27} & 86.25{\tiny$\pm$1.18} & 42.03{\tiny$\pm$3.07}\\
+\bottomrule
+\end{tabular}
